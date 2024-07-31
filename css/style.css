@@ -385,10 +385,6 @@ header .container-fluid{
     text-transform: uppercase;
 }
 /* Contact */
-.contact{
-    padding-top: 67px;
-    padding-bottom: 76px;
-}
 .contact_form{
     background-color: var(--light-gray-color);
     padding: 12px;
@@ -454,9 +450,6 @@ textarea.form-control{
 }
 .contact_text {
     max-width: 606px;
-}
-.contact_text h2{
-     margin-bottom: 32px;
 }
 /* Start Footer */
 footer{
@@ -611,9 +604,6 @@ footer .social_links li a{
     letter-spacing: 0.88px;
     margin-bottom: 50px;
 }
-.employers_contact .contact_text{
-    padding-left: 30px;
-}
 .candidates_contact{
     padding-inline: 25px;
 }
@@ -624,15 +614,11 @@ footer .social_links li a{
     margin-bottom: 30px;
 }
 .contact_icon_box{
-    width: 50px;
-    min-width: 50px;
-    height: 50px;
     border-radius: 50%;
     background-color: rgba(38, 80, 120, 0.1); 
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 20px;
 }
 .contact_detail span{
     font-size: 18px;
@@ -667,22 +653,6 @@ footer .social_links li a{
     font-weight: 500;
     line-height: 23.79px;
     margin-bottom: 35px;
-}
-.job_offers{
-    padding-inline: 225px;
-    padding-top: 64px;
-    padding-bottom: 51px;
-}
-.job_offers .main_btn{
-    margin-top: 40px;
-    padding-inline: 46px;
-    min-width: 254px;
-}
-.job_offers .row > * {
-    padding-right: 0;
-}
-.job_offers h3{
-    margin-bottom: 45px;
 }
 .offer_text h5{
     font-weight: 500;
@@ -727,7 +697,7 @@ footer .social_links li a{
 }
 .offer_img_container{
     width: 79px;
-    height: 85.5px;
+    max-height: 85.5px;
     border-radius: 14px;
     border: 1px solid #FFFFFF;
     overflow: hidden;
@@ -926,9 +896,8 @@ footer .social_links li a{
 }
 /* ======================================= vacancy page styles ==================================*/
 .work_Europe.container-fluid{
-    padding-inline: 72px;
-    padding-top: 91px;
-    padding-bottom: 74px;
+    padding-inline: 25px;
+    padding-top: 13px;
 }
 .work_box_upper{
     margin-bottom: 60px;
@@ -940,20 +909,8 @@ footer .social_links li a{
     line-height: 61.35px;
     margin-bottom: 53px;
 }
-.work_box{
-    padding: 42px 48px 18px 64px;
-    box-shadow: 0px 29px 40.2px 0px #00000012;
-    border-radius: 20px; 
-}
 .text_title{
-    font-size: 42px;
     color: var(--main-color);
-    font-weight: 400;
-    line-height: 63px;
-    letter-spacing: 0.04em;
-}
-.work_text .text_title{
-    margin-bottom: 23px;
 }
 .work_text .path_text{
     font-size: 14px;
@@ -974,39 +931,32 @@ footer .social_links li a{
     transform: translateY(-50%);
     border-radius: 32px;
 }
-.svg_locat{
-    margin-right: 20px;
+.svg_locat + p{
+    letter-spacing: 0.08em;
 }
 .work_dev_head{
-    padding: 10px 28px;
+    padding: 19px 28px;
     border-radius: 81px;
     gap: 18px;
     margin-bottom: 22px;
 }
 .work_dev_head span{
     font-size: 20px;
-    line-height: 45.6px;
+    /* line-height: 45.6px; */
+    /* padding-block: 8px; */
     letter-spacing: 0.08em;
-    text-align: justified;
 }
 .work_num{
     font-size: 84px;
     font-weight: 500;
+    color: #000000;
     letter-spacing: 0.08em;
 }
 .work_adv .common_text{
     font-size: 18px;
     line-height: 41.04px;
     letter-spacing: 0.08em;
-    text-align: justified;
     padding-inline: 15px;
-}
-.work_article{
-    margin-top: 42px;
-    margin-bottom: 18px;
-}
-.work_article .text_title{
-    margin-bottom: 18px;
 }
 .work_article p{
     font-size: 20px;
@@ -1059,6 +1009,74 @@ footer .social_links li a{
     margin-top: 17px;
 }
 /* Responsiveness */
+@media only screen and (min-width: 992px){
+    .work_Europe.container-fluid{
+        padding-inline: 72px;
+        padding-top: 91px;
+        padding-bottom: 74px;
+    }
+    .work_box{
+        box-shadow: 0px 29px 40.2px 0px #00000012;
+        border-radius: 20px; 
+    }
+    .work_box{
+        padding: 42px 48px 18px 64px;
+    }
+    .work_article{
+        margin-top: 42px;
+        margin-bottom: 18px;
+    }
+    .work_article .text_title{
+        margin-bottom: 18px;
+    }
+    .work_text .text_title{
+        margin-bottom: 23px;
+    }
+    .text_title{
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 63px;
+        letter-spacing: 0.04em;
+    }
+    .svg_locat + p{
+        font-size: 24px;
+    }
+    .svg_locat{
+        margin-right: 20px;
+    }
+    .job_offers{
+        padding-inline: 225px;
+        padding-top: 64px;
+        padding-bottom: 51px;
+    }
+    .job_offers h3{
+        margin-bottom: 45px;
+    }
+    .job_offers .main_btn{
+        margin-top: 40px;
+        padding-inline: 46px;
+        min-width: 254px;
+    }
+    .job_offers .row > * {
+        padding-right: 0;
+    }
+    .contact{
+        padding-top: 67px;
+        padding-bottom: 76px;
+    }
+    .employers_contact .contact_text{
+        padding-left: 30px;
+    }
+    .contact_text h2{
+        margin-bottom: 32px;
+   }
+   .contact_icon_box{
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+        margin-right: 20px;
+   }
+}
 @media(max-width: 991px){
     header .container-fluid{
         height: 52px;
@@ -1122,6 +1140,10 @@ footer .social_links li a{
     }
     .location_text p:not(:first-child){
         margin-bottom: 10px;
+    }
+    .navbar-nav{
+        gap: 52px;
+        padding-top: 24px;
     }
 }
 @media (max-width:767px){
@@ -1262,6 +1284,126 @@ footer .social_links li a{
         padding: 9.5px 12px;
         margin-top: 5px;
     }
+    .work_Europe .work_heading{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22.54px;
+    }
+    .text_title{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+    }
+    .work_text .text_title {
+        margin-bottom: 5px;
+    }
+    .work_img{
+        border-radius: 16px;
+        margin-top: 15px;
+        overflow: hidden;
+    }
+    .work_adv{
+        margin-bottom: 27px;
+    }
+    .work_dev_head{
+        padding: 7px 13px 9px;
+    }
+    .work_dev_head span{
+        font-size: 10px;
+        /* line-height: 22.8px; */
+        letter-spacing: 0.08em;
+    }
+    .work_dev_svg svg{
+        height: 14px;
+        width: fit-content;
+    }
+    .work_dev_head{
+        gap: 7px;
+        margin-bottom: 15px;
+    }
+    .work_num{
+        font-size: 37px;
+    }
+    .work_adv .common_text{
+        font-size: 10px;
+        line-height: 22.8px;
+        padding-inline: unset;
+        text-align: center;
+    }
+    .svg_locat + p{
+        font-size: 12px;
+    }
+    .svg_locat{
+        margin-right: 7px;
+    }
+    .work_article p{
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 16.8px;
+        letter-spacing: 0.08em;
+    }
+    .work_article .text_title{
+        font-size: 16px;
+        margin-bottom: 10px;
+        letter-spacing: 0.04em;
+    }
+    .svg_locat svg{
+        height: 16px;
+    }
+    h3{
+        font-size: 20px;
+        line-height: 29.04px;
+        letter-spacing: 0.055em;
+    }
+    .job_offers .container{
+        margin-top: 25px;
+        padding-block: 28px;
+        padding-inline: 25px;
+    }
+    .job_offers h3{
+        margin-bottom: 22px;
+    }
+    .job_offer{
+        padding: 8px 7px;
+        margin-bottom: 14px;
+        gap: 12px;
+    }
+    .job_offers .main_btn{
+        padding: 12px 16px;
+        font-size: 10px;
+        margin-top: 12px;
+    }
+    .offer_img_container{
+        width: 40px;
+        height: 40px;
+        border-radius: 3px;
+    }
+    .offer_text h5{
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    .employers_contact .contact_text h2{
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 29.04px;
+   }
+   .contact .contact_detail:not(:last-child){
+        margin-bottom: 12px;
+   }
+   .contact_detail span{
+        font-size: 12px;
+        line-height: 16.8px;
+   }
+   .contact_icon_box{
+        width: 31.9px;
+        min-width: 31.9px;
+        height: 31.9px;
+        margin-right: 12px;
+   }
+   .contact_icon_box svg{
+    height: 12.52px;
+   }
     /* footer */
     footer{
         padding-top: 25px;
