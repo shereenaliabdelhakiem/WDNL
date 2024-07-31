@@ -229,7 +229,7 @@ header .container-fluid{
     background-repeat: no-repeat;
     background-position: top center;
     padding-top: 91px;
-    background-image: url(../img/about_hero_img.webp);
+    background-image: url(../img/about_hero_img.png);
     height: calc(100vh + 72px);
 }
 .employers_hero{
