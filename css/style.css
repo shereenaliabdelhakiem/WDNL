@@ -139,6 +139,9 @@ h5{
     height: 65px;
     min-width: 65px;
     width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .circled_icon_container{
     border-radius: 32.5px;
