@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Roboto & Open sans fonts CDN-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--Bootstrap 5 CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Custom Style-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Website Logo & Title-->
+    <link rel="icon" href="img/WDNL.svg" type="image/icon type">
+    <title>Wakat - Work Department NL</title>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light container-fluid">
+              <a class="navbar-brand" href="index.html">
+                WDNL
+              </a>
+              <button class="navbar-toggler border-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="btn__icon header__toggleIconMenu" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1 1.3C19.1 0.955214 18.963 0.624559 18.7192 0.380757C18.4754 0.136968 18.1448 0 17.8 0H2.2C1.85524 0 1.52452 0.136968 1.28078 0.380757C1.03703 0.624559 0.900005 0.955214 0.900005 1.3C0.900005 1.64479 1.03703 1.97544 1.28078 2.21924C1.52452 2.46303 1.85524 2.6 2.2 2.6H17.8C18.1448 2.6 18.4754 2.46303 18.7192 2.21924C18.963 1.97544 19.1 1.64479 19.1 1.3ZM19.1 7.8C19.1 7.45521 18.963 7.12456 18.7192 6.88076C18.4754 6.63697 18.1448 6.5 17.8 6.5H10C9.65525 6.5 9.32452 6.63697 9.08078 6.88076C8.83703 7.12456 8.70001 7.45521 8.70001 7.8C8.70001 8.14476 8.83703 8.47548 9.08078 8.71923C9.32452 8.96298 9.65525 9.1 10 9.1H17.8C18.1448 9.1 18.4754 8.96298 18.7192 8.71923C18.963 8.47548 19.1 8.14476 19.1 7.8ZM19.1 14.3C19.1 13.9552 18.963 13.6245 18.7192 13.3808C18.4754 13.137 18.1448 13 17.8 13H2.2C1.85524 13 1.52452 13.137 1.28078 13.3808C1.03703 13.6245 0.900005 13.9552 0.900005 14.3C0.900005 14.6448 1.03703 14.9755 1.28078 15.2192C1.52452 15.463 1.85524 15.6 2.2 15.6H17.8C18.1448 15.6 18.4754 15.463 18.7192 15.2192C18.963 14.9755 19.1 14.6448 19.1 14.3Z" fill="black"/>
+                </svg>
+                <svg class="btn__icon header__toggleIconClose" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7123 16.7729C16.0052 17.0658 16.4801 17.0658 16.7729 16.7729C17.0658 16.48 17.0658 16.0052 16.7729 15.7123L13.0607 12L16.7729 8.2877C17.0658 7.99481 17.0658 7.51993 16.7729 7.22704C16.48 6.93415 16.0052 6.93415 15.7123 7.22704L12 10.9393L8.28766 7.22699C7.99477 6.9341 7.5199 6.9341 7.227 7.22699C6.93411 7.51989 6.93411 7.99476 7.227 8.28765L10.9393 12L7.22699 15.7123C6.9341 16.0052 6.9341 16.4801 7.22699 16.773C7.51989 17.0659 7.99476 17.0659 8.28765 16.773L12 13.0606L15.7123 16.7729Z" fill="black"></path>
+                </svg>
+              </button>
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">O nas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="employers.html">Dla pracodawców</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="candidates.html">Dla kandydatów</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="partners.html">Dla Partnerów</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Kontakt</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span> <img src="img/country_flag.png" class="img-fluid country_flag" alt="country flag"></span> <span>EN</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Uk</a></li>
+                      <li><a class="dropdown-item" href="#">TR </a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+        </nav>
+    </header>
+    <!--work_Europe-->
+    <section class="work_Europe container-fluid">
+        <h1 class="work_heading">Praca w Europie</h1>
+        <div class="work_box">
+            <div class="work_box_upper d-md-flex align-items-center justify-content-between">
+                <div class="work_text">
+                    <h1 class="text_title">Spawacz MIG / MAG 135</h1>
+                    <p class="path_text">wdnl.com / Informacje / Dokument </p>
+                    <div class="d-flex align-items-center">
+                        <div class="svg_locat">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="21" height="30" viewBox="0 0 21 30" fill="none">
+                                <path d="M10.5 0C4.695 0 0 4.695 0 10.5C0 13.11 0.75 15.555 2.115 17.76C3.54 20.07 5.415 22.05 6.855 24.36C7.56 25.485 8.07 26.535 8.61 27.75C9 28.575 9.315 30 10.5 30C11.685 30 12 28.575 12.375 27.75C12.93 26.535 13.425 25.485 14.13 24.36C15.57 22.065 17.445 20.085 18.87 17.76C20.25 15.555 21 13.11 21 10.5C21 4.695 16.305 0 10.5 0ZM10.5 14.625C8.43 14.625 6.75 12.945 6.75 10.875C6.75 8.805 8.43 7.125 10.5 7.125C12.57 7.125 14.25 8.805 14.25 10.875C14.25 12.945 12.57 14.625 10.5 14.625Z" fill="#022140"/>
+                            </svg>
+                        </div>
+                        <p>Polska, Miasto Bydgoszcz</p>
+                    </div>
+                </div>
+                <div class="work_img">
+                    <img src="img/vacancy_img.png" class="img-fluid" alt="Praca w Europie">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <div class="work_adv text-center">
+                        <div class="work_dev_head d-flex align-items-center bg_aqua_light">
+                            <div class="work_dev_svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="24" height="28" viewBox="0 0 24 28" fill="none">
+                                    <path d="M12 14C15.7875 14 18.8571 10.8664 18.8571 7C18.8571 3.13359 15.7875 0 12 0C8.2125 0 5.14286 3.13359 5.14286 7C5.14286 10.8664 8.2125 14 12 14ZM16.8 15.75H15.9054C14.7161 16.3078 13.3929 16.625 12 16.625C10.6071 16.625 9.28929 16.3078 8.09464 15.75H7.2C3.225 15.75 0 19.0422 0 23.1V25.375C0 26.8242 1.15179 28 2.57143 28H21.4286C22.8482 28 24 26.8242 24 25.375V23.1C24 19.0422 20.775 15.75 16.8 15.75Z" fill="#022140"/>
+                                </svg>
+                            </div>
+                            <span>Mężczyźni / Kobiety</span>
+                        </div>
+                        <span class="work_num">37</span>
+                        <p class="common_text">Mężczyźni / Kobiety</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="work_adv">
+                        <div class="work_dev_head d-flex align-items-center bg_aqua_light">
+                            <div class="work_dev_svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="38" height="26" viewBox="0 0 38 26" fill="none">
+                                    <path d="M36.0495 1.30348C33.7983 0.359241 31.5453 6.98029e-08 29.2935 6.98029e-08C22.1453 -0.000580287 14.9976 3.61795 7.84933 3.61795C6.05661 3.61795 4.26504 3.39045 2.47232 2.8217C2.27094 2.75786 2.06897 2.72768 1.87165 2.72768C0.872857 2.72768 0 3.50071 0 4.57379V22.9862C0 23.7192 0.419598 24.4139 1.09339 24.6959C3.3446 25.6408 5.59754 26 7.84933 26C14.9976 26 22.1458 22.3815 29.2941 22.3815C31.0868 22.3815 32.8784 22.609 34.6711 23.1777C34.8725 23.2416 35.0745 23.2717 35.2718 23.2717C36.2706 23.2717 37.1434 22.4987 37.1434 21.4256V3.01379C37.1429 2.28022 36.7233 1.58612 36.0495 1.30348ZM2.78571 5.81634C3.95339 6.10884 5.17214 6.25567 6.42571 6.3346C6.08446 8.04027 4.58482 9.32576 2.78571 9.32576V5.81634ZM2.78571 22.3565V19.5836C4.7804 19.5836 6.39437 21.1662 6.48317 23.147C5.17562 23.0419 3.95339 22.7808 2.78571 22.3565ZM18.5714 18.5714C16.0068 18.5714 13.9286 16.0765 13.9286 13C13.9286 9.92295 16.0074 7.42857 18.5714 7.42857C21.1354 7.42857 23.2143 9.92295 23.2143 13C23.2143 16.0776 21.1349 18.5714 18.5714 18.5714ZM34.3571 20.1837C33.3404 19.9289 32.2847 19.7861 31.2046 19.6938C31.5453 18.1803 32.8006 17.0312 34.3571 16.8338V20.1837ZM34.3571 6.48085C32.5644 6.25393 31.1733 4.75719 31.1182 2.90875C32.2522 3.03469 33.3288 3.27031 34.3571 3.64348V6.48085Z" fill="#022140"/>
+                                </svg>
+                            </div>
+                            <span>5040 zl netto</span>
+                        </div>
+                        <p class="common_text">Stawka za godzinę 28 zł netto Wynagrodzenie miesięcznie 4200 - 5550 zł netto</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="work_adv">
+                        <div class="work_dev_head d-flex align-items-center bg_aqua_light">
+                            <div class="work_dev_svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" width="31" height="29" viewBox="0 0 31 29" fill="none">
+                                    <path d="M12.1009 27.1977V18.7918H18.8256V27.1977C18.8256 28.1224 19.5821 28.8789 20.5067 28.8789H25.5503C26.4749 28.8789 27.2315 28.1224 27.2315 27.1977V15.4295H30.0895C30.8628 15.4295 31.2327 14.4712 30.6442 13.9669L16.5896 1.30761C15.9508 0.736006 14.9757 0.736006 14.3368 1.30761L0.282189 13.9669C-0.289411 14.4712 0.0636357 15.4295 0.836977 15.4295H3.69498V27.1977C3.69498 28.1224 4.45151 28.8789 5.37615 28.8789H10.4197C11.3443 28.8789 12.1009 28.1224 12.1009 27.1977Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <span>Zakwaterowanie</span>
+                        </div>
+                        <p class="common_text text-center">Zakwaterowanie jest bezpłatne, miesięczna opłata administracyjna i komunalna 400 zł miesięcznie</p>
+                    </div>
+                </div>
+            </div>
+            <div class="work_article">
+                <h1 class="text_title">Opis stanowiska</h1>
+                <p>Firma-producent wysokiej jakości ogrodzeń i innych ogrodzeń, zaprasza do pracy spawaczy MIG / MAG 135. </p>
+                <p>Wykonywana praca:<br>spawanie blach o grubości 20-30 mm;<br>spawanie metodą MIG profili konstrukcyjnych i blach ze stali węglowej;<br>spawanie według rysunku technicznego</p>
+                <p>Wymagania:<br>rozumienie języka polskiego;<br>doświadczenie minimum rok, umiejętność pracy z półautomatem MIG / MAG;<br>uważność i dokładność w wykonywaniu pracy;<br>chęć do pracy</p>
+                <p>Harmonogram: jedna zmiana po 10-12 godzin dziennie, od poniedziałku do piątku w godzinach 06-17. Sobota,<br> niedziela-weekend.<br>Od 200 godzin miesięcznie.</p>
+                <p>Płatność: stawka za godzinę 23 zł netto. Miesięcznie 4200-5550 zł netto (aktualne od 01.12.2022) zakwaterowanie zapewnia komfortowy dom prywatny w Słupsku, w pokojach 3-5 osobowych. Zakwaterowanie jest bezpłatne, miesięcznie płaci się tylko opłatę administracyjną + Media: 650 zł miesięcznie. Dla wygody kwota ta jest potrącana z wynagrodzenia. Przy zameldowaniu na nocleg kandydat wpłaca kaucję w wysokości 200 zł. Zwierzęta nie są akceptowane.</p>
+                <p>Dodatkowe informacje:<br>robimy miód. książeczkę (koszt 200 zł potrącony z wynagrodzenia).</p>
+            </div>
+        </div>
+    </section>
+    <!--job_offers-->
+    <section class="job_offers bg_aqua_light_opacity">
+        <div class="container">
+            <h3 class="text-center"><span>Popularne oferty pracy za granicą</span></h3>
+            <div class="row">
+                <div class="col-6 col-lg-4">
+                    <div class="job_offer d-flex align-items-start">
+                        <div class="offer_img_container">
+                            <img src="img/job_offer_img.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="offer_text">
+                            <h5>Spawacz <br>MIG / MAG 135</h5>
+                            <span>Kraj: Polska</span>
+                            <span>Miasto: Bydgoszcz</span>
+                            <span>Język: Polski / Angielski</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <div class="job_offer d-flex align-items-start">
+                        <div class="offer_img_container">
+                            <img src="img/job_offer_img.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="offer_text">
+                            <h5>Spawacz <br>MIG / MAG 135</h5>
+                            <span>Kraj: Polska</span>
+                            <span>Miasto: Bydgoszcz</span>
+                            <span>Język: Polski / Angielski</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <div class="job_offer d-flex align-items-start">
+                        <div class="offer_img_container">
+                            <img src="img/job_offer_img.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="offer_text">
+                            <h5>Spawacz <br>MIG / MAG 135</h5>
+                            <span>Kraj: Polska</span>
+                            <span>Miasto: Bydgoszcz</span>
+                            <span>Język: Polski / Angielski</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <div class="job_offer d-flex align-items-start">
+                        <div class="offer_img_container">
+                            <img src="img/job_offer_img.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="offer_text">
+                            <h5>Spawacz <br>MIG / MAG 135</h5>
+                            <span>Kraj: Polska</span>
+                            <span>Miasto: Bydgoszcz</span>
+                            <span>Język: Polski / Angielski</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <div class="job_offer d-flex align-items-start">
+                        <div class="offer_img_container">
+                            <img src="img/job_offer_img.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="offer_text">
+                            <h5>Spawacz <br>MIG / MAG 135</h5>
+                            <span>Kraj: Polska</span>
+                            <span>Miasto: Bydgoszcz</span>
+                            <span>Język: Polski / Angielski</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <div class="job_offer d-flex align-items-start">
+                        <div class="offer_img_container">
+                            <img src="img/job_offer_img.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="offer_text">
+                            <h5>Spawacz <br>MIG / MAG 135</h5>
+                            <span>Kraj: Polska</span>
+                            <span>Miasto: Bydgoszcz</span>
+                            <span>Język: Polski / Angielski</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="site_btn main_btn mx-auto">Więcej ofert</a>
+        </div>
+    </section>
+    <!--contact-->
+    <section class="contact employers_contact candidates_contact container">
+        <div class="row align-items-lg-center">
+            <div class="col-12 col-lg-6">
+                <div class="contact_form">
+                    <form>
+                        <div class="form_group">
+                            <label for="user_name" class="form-label">Imię i nazwisko*</label>
+                            <input type="text" name="first name" class="form-control" id="user_name">
+                        </div>
+                        <div class="d-lg-flex align-items-center gap-4">
+                            <div class="form_group w-100">
+                                <label for="user_tel" class="form-label">Telefon*</label>
+                                <input type="tel" name="user tel" class="form-control" id="user_tel">
+                            </div>
+                            <div class="form_group w-100">
+                                <label for="user_email" class="form-label">Adres e-mail*</label>
+                                <input type="email" name="user email" class="form-control" id="user_email">
+                            </div>
+                        </div>
+                        <button type="submit" class="main_btn form_btn">Wyślij</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="contact_text text-center text-lg-start">
+                    <h2 class="secodary_font"><span>Szukasz</span> pracy w Europie?<br> <span>Zostaw dane</span> kontaktowe<br> <span>lub</span> zadzwoń</h2>
+                    <div class="contact_detail d-flex align-items-center">
+                        <div class="contact_icon_box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52608 10.4781C13.5636 14.5145 14.4796 9.84485 17.0503 12.4138C19.5286 14.8915 20.9531 15.3879 17.813 18.527C17.4197 18.8431 14.9207 22.646 6.13829 13.8661C-2.64519 5.08502 1.15548 2.58344 1.47166 2.19023C4.61933 -0.957648 5.10718 0.475082 7.58554 2.95276C10.1563 5.52277 5.48855 6.44171 9.52608 10.4781Z" fill="#265078"></path>
+                            </svg>
+                        </div>
+                        <span>(808) 555-0111</span>
+                    </div>
+                    <div class="contact_detail d-flex align-items-center">
+                        <div class="contact_icon_box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" viewBox="0 0 22 19" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9374 0.15387C17.3128 0.15387 18.6359 0.697459 19.6092 1.67284C20.5836 2.64618 21.1282 3.959 21.1282 5.33336V13.4359C21.1282 16.2975 18.8 18.6154 15.9374 18.6154H5.8051C2.94254 18.6154 0.615356 16.2975 0.615356 13.4359V5.33336C0.615356 2.47182 2.93228 0.15387 5.8051 0.15387H15.9374ZM17.5692 6.86162L17.6513 6.77957C17.8964 6.48214 17.8964 6.05137 17.64 5.75393C17.4974 5.60111 17.3015 5.50778 17.0974 5.48727C16.882 5.47598 16.6769 5.5488 16.522 5.69239L11.8974 9.3847C11.3025 9.87804 10.4502 9.87804 9.84612 9.3847L5.23074 5.69239C4.91176 5.4565 4.47074 5.48727 4.2051 5.76419C3.92817 6.04111 3.8974 6.48214 4.13228 6.78983L4.26663 6.92316L8.9333 10.5642C9.50766 11.0155 10.2041 11.2616 10.9333 11.2616C11.6605 11.2616 12.3692 11.0155 12.9425 10.5642L17.5692 6.86162Z" fill="#265078"></path>
+                            </svg>
+                        </div>
+                        <span>sara.cruz@example.com</span>
+                    </div>
+                    <div class="contact_detail d-flex align-items-center">
+                        <div class="contact_icon_box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 20 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.192322 10.4435C0.192322 5.13599 4.62756 0.84613 9.99242 0.84613C15.3724 0.84613 19.8077 5.13599 19.8077 10.4435C19.8077 13.118 18.835 15.601 17.234 17.7056C15.4678 20.0271 13.2909 22.0497 10.8406 23.6373C10.2798 24.0042 9.77369 24.0319 9.1582 23.6373C6.69392 22.0497 4.51703 20.0271 2.76597 17.7056C1.16384 15.601 0.192322 13.118 0.192322 10.4435ZM6.76256 10.7424C6.76256 12.5204 8.21344 13.9188 9.99242 13.9188C11.7726 13.9188 13.2374 12.5204 13.2374 10.7424C13.2374 8.97819 11.7726 7.5117 9.99242 7.5117C8.21344 7.5117 6.76256 8.97819 6.76256 10.7424Z" fill="#265078"></path>
+                            </svg>
+                        </div>
+                        <span>7102 Skyline Drive. San Diego, CA 92114, USA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <h3 class="mx-auto"><span>WDNL</span></h3>
+            <ul class="d-flex align-items-center justify-content-center social_links">
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M0 23.2417L1.63418 17.2724C0.626435 15.5292 0.0998665 13.5455 0.0998665 11.5164C0.0998665 5.16582 5.27023 0 11.6208 0C14.7031 0 17.5947 1.20294 19.769 3.3773C21.9434 5.55621 23.1418 8.4478 23.1418 11.5255C23.1373 17.8761 17.9714 23.0419 11.6208 23.0419H11.6163C9.68705 23.0419 7.79413 22.5562 6.11001 21.6393L0 23.2417ZM6.39146 19.5557L6.74099 19.7645C8.21175 20.6361 9.89586 21.0991 11.6163 21.0991H11.6208C16.9001 21.0991 21.1944 16.8048 21.1944 11.5255C21.1944 8.96983 20.2003 6.56395 18.3936 4.75274C16.5869 2.94152 14.181 1.9474 11.6254 1.9474C6.34152 1.9474 2.04726 6.24166 2.04726 11.521C2.04726 13.3276 2.55114 15.0889 3.50895 16.6142L3.73592 16.9773L2.76903 20.509L6.39146 19.5557Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.29074 7.49293C9.12312 7.13818 8.94852 7.13148 8.79139 7.12479C8.66218 7.1181 8.51552 7.12144 8.36536 7.12144C8.2187 7.12144 7.97775 7.17499 7.77522 7.38584C7.57268 7.59668 7 8.11209 7 9.15628C7 10.2005 7.79268 11.2112 7.90442 11.3518C8.01617 11.4923 9.4374 13.7045 11.6862 14.5546C13.5579 15.2608 13.9386 15.1202 14.3436 15.0868C14.7487 15.0533 15.6531 14.5747 15.8382 14.0794C16.0233 13.5841 16.0233 13.159 15.9674 13.072C15.9115 12.985 15.7649 12.9314 15.5414 12.8243C15.3214 12.7172 14.2319 12.2052 14.0294 12.1349C13.8268 12.0646 13.6802 12.0278 13.53 12.242C13.3833 12.4529 12.9573 12.9314 12.8281 13.072C12.6989 13.2126 12.5697 13.2326 12.3497 13.1256C12.1297 13.0185 11.4139 12.7942 10.5688 12.0713C9.90882 11.5091 9.46534 10.8129 9.33613 10.6021C9.20693 10.3912 9.32217 10.2741 9.43391 10.1704C9.53168 10.0766 9.6539 9.92269 9.76565 9.79886C9.87739 9.67503 9.91231 9.58801 9.98564 9.4441C10.059 9.30354 10.0241 9.17971 9.96818 9.07261C9.91929 8.96217 9.48978 7.91463 9.29074 7.49293Z" fill="white"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7899 5.84168C6.1627 3.93652 9.07859 2.68053 10.5376 2.07369C14.7032 0.341052 15.5688 0.0400737 16.133 0.0301353C16.2571 0.0279494 16.5345 0.0587015 16.7142 0.20453C16.866 0.327665 16.9077 0.494003 16.9277 0.610748C16.9477 0.727494 16.9726 0.993443 16.9528 1.20125C16.7271 3.5731 15.7503 9.32896 15.2534 11.9855C15.0431 13.1095 14.6291 13.4864 14.2283 13.5233C13.3572 13.6035 12.6957 12.9477 11.852 12.3946C10.5319 11.5292 9.78603 10.9905 8.50455 10.146C7.02358 9.17008 7.98363 8.63369 8.82763 7.75708C9.04851 7.52766 12.8865 4.03672 12.9608 3.72004C12.9701 3.68043 12.9787 3.53279 12.891 3.45484C12.8033 3.37688 12.6738 3.40354 12.5804 3.42474C12.448 3.45479 10.339 4.84878 6.25333 7.60671C5.65469 8.01778 5.11246 8.21807 4.62664 8.20757C4.09106 8.196 3.06083 7.90475 2.29495 7.65579C1.35558 7.35044 0.608978 7.18899 0.67399 6.67041C0.707853 6.4003 1.07982 6.12406 1.7899 5.84168Z" fill="white"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                            <g clip-path="url(#clip0_2_712)">
+                            <path d="M11 1.98086C13.9391 1.98086 14.2871 1.99375 15.443 2.04531C16.5172 2.09258 17.0973 2.27305 17.484 2.42344C17.9953 2.62109 18.3648 2.86172 18.7473 3.24414C19.134 3.63086 19.3703 3.99609 19.568 4.50742C19.7184 4.89414 19.8988 5.47852 19.9461 6.54844C19.9977 7.70859 20.0105 8.05664 20.0105 10.9914C20.0105 13.9305 19.9977 14.2785 19.9461 15.4344C19.8988 16.5086 19.7184 17.0887 19.568 17.4754C19.3703 17.9867 19.1297 18.3563 18.7473 18.7387C18.3605 19.1254 17.9953 19.3617 17.484 19.5594C17.0973 19.7098 16.5129 19.8902 15.443 19.9375C14.2828 19.9891 13.9348 20.002 11 20.002C8.06094 20.002 7.71289 19.9891 6.55703 19.9375C5.48281 19.8902 4.90273 19.7098 4.51602 19.5594C4.00469 19.3617 3.63516 19.1211 3.25273 18.7387C2.86602 18.352 2.62969 17.9867 2.43203 17.4754C2.28164 17.0887 2.10117 16.5043 2.05391 15.4344C2.00234 14.2742 1.98945 13.9262 1.98945 10.9914C1.98945 8.05234 2.00234 7.7043 2.05391 6.54844C2.10117 5.47422 2.28164 4.89414 2.43203 4.50742C2.62969 3.99609 2.87031 3.62656 3.25273 3.24414C3.63945 2.85742 4.00469 2.62109 4.51602 2.42344C4.90273 2.27305 5.48711 2.09258 6.55703 2.04531C7.71289 1.99375 8.06094 1.98086 11 1.98086ZM11 0C8.01367 0 7.63984 0.0128906 6.4668 0.0644531C5.29805 0.116016 4.49453 0.305078 3.79844 0.575781C3.07227 0.859375 2.45781 1.2332 1.84766 1.84766C1.2332 2.45781 0.859375 3.07227 0.575781 3.79414C0.305078 4.49453 0.116016 5.29375 0.0644531 6.4625C0.0128906 7.63984 0 8.01367 0 11C0 13.9863 0.0128906 14.3602 0.0644531 15.5332C0.116016 16.702 0.305078 17.5055 0.575781 18.2016C0.859375 18.9277 1.2332 19.5422 1.84766 20.1523C2.45781 20.7625 3.07227 21.1406 3.79414 21.4199C4.49453 21.6906 5.29375 21.8797 6.4625 21.9312C7.63555 21.9828 8.00937 21.9957 10.9957 21.9957C13.982 21.9957 14.3559 21.9828 15.5289 21.9312C16.6977 21.8797 17.5012 21.6906 18.1973 21.4199C18.9191 21.1406 19.5336 20.7625 20.1437 20.1523C20.7539 19.5422 21.132 18.9277 21.4113 18.2059C21.682 17.5055 21.8711 16.7063 21.9227 15.5375C21.9742 14.3645 21.9871 13.9906 21.9871 11.0043C21.9871 8.01797 21.9742 7.64414 21.9227 6.47109C21.8711 5.30234 21.682 4.49883 21.4113 3.80273C21.1406 3.07227 20.7668 2.45781 20.1523 1.84766C19.5422 1.2375 18.9277 0.859375 18.2059 0.580078C17.5055 0.309375 16.7062 0.120313 15.5375 0.06875C14.3602 0.0128906 13.9863 0 11 0Z" fill="white"/>
+                            <path d="M11 5.34961C7.88047 5.34961 5.34961 7.88047 5.34961 11C5.34961 14.1195 7.88047 16.6504 11 16.6504C14.1195 16.6504 16.6504 14.1195 16.6504 11C16.6504 7.88047 14.1195 5.34961 11 5.34961ZM11 14.6652C8.97617 14.6652 7.33477 13.0238 7.33477 11C7.33477 8.97617 8.97617 7.33477 11 7.33477C13.0238 7.33477 14.6652 8.97617 14.6652 11C14.6652 13.0238 13.0238 14.6652 11 14.6652Z" fill="white"/>
+                            <path d="M18.193 5.12615C18.193 5.85662 17.6 6.44529 16.8738 6.44529C16.1434 6.44529 15.5547 5.85232 15.5547 5.12615C15.5547 4.39568 16.1477 3.80701 16.8738 3.80701C17.6 3.80701 18.193 4.39998 18.193 5.12615Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2_712">
+                            <rect width="22" height="22" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="17" viewBox="0 0 9 17" fill="none">
+                            <path d="M8.39385 9.43359L8.85938 6.39844H5.94727V4.42969C5.94727 3.59933 6.35414 2.78906 7.65844 2.78906H8.98242V0.205078C8.98242 0.205078 7.78087 0 6.63202 0C4.23363 0 2.66602 1.45359 2.66602 4.08516V6.39844H0V9.43359H2.66602V16.7709C3.75315 16.941 4.86013 16.941 5.94727 16.7709V9.43359H8.39385Z" fill="white"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <div class="copyright d-flex flex-column-reverse flex-md-row fz_sm_14 align-items-center">
+                <p>COPYRIGHT © 2024 WDNL. ALL RIGHTS RESERVED</p>
+                <p><span class="me-4"><a href="#">Terms</a></span> <span><a href="#">Privacy</a></span></p>
+            </div>
+        </div>
+    </footer>
+    <!--Bootstrap 5 CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <!--Custom js -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -5,7 +5,7 @@
     margin-block-start: 0;
     margin-block-end: 0;
 }
-li {
+ul li {
     list-style: none;
 }
 a{
@@ -18,6 +18,7 @@ a{
     --light-gray-color: #E6E8ED;
     --white-color: #FDFDFD;
     --light-aqua-color: #ECF5FF;
+    --light_aqua_opacity_50_color: rgba(236, 245, 255, 0.5);
     --secondary_font: "Open Sans", sans-serif;
     --transition-hover: all 0.2s ease-in-out;
 }
@@ -71,7 +72,10 @@ body.no-scroll::before {
     fill: #fff;
 }
 /* Global variables */
- .bg_aqua_light{
+ .bg_aqua_light_opacity{
+    background-color: var(--light_aqua_opacity_50_color);
+}
+.bg_aqua_light{
     background-color: var(--light-aqua-color);
 }
 h2{
@@ -92,6 +96,9 @@ h3{
 }
 h3 span{
     font-weight: 400;
+}
+h5{
+    font-size: 18px;
 }
 .common_text{
     font-size: 18px;
@@ -132,15 +139,15 @@ h3 span{
     height: 65px;
     min-width: 65px;
     width: 65px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .circled_icon_container{
     border-radius: 32.5px;
     background: linear-gradient(132.89deg, #265078 3.43%, #022140 100%);
     transition: var(--transition-hover);
     box-shadow: 0px 9px 10.3px 0px #26507891;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .icon_container{
     background-color: var(--text-color);
@@ -289,7 +296,7 @@ header .container-fluid{
     padding-top: 77px;
     padding-bottom: 130px;
 }
-.location_text h2{
+.location .location_text h2{
     margin-bottom: 30px;
 }
 .location_text p{
@@ -317,7 +324,7 @@ header .container-fluid{
 .benefit_svg_container_hover{
     display: none;
 }
-.benefit{
+.cooperation_benefits .benefit{
     gap: 32px;
     padding-left: 34px;
     padding-right: 52px;
@@ -328,25 +335,24 @@ header .container-fluid{
     overflow: hidden;
 }
 .benefit h5{
-    font-size: 18px;
     font-weight: 700;
     margin-bottom: 5px;
 }
-.benefit:hover{
+.cooperation_benefits .benefit:hover{
     background-color: var(--main-color);
     color: #fff;   
     box-shadow: 0px 28px 33.6px 0px #02214054;
 }
-.benefit:hover .circled_icon_container{
+.cooperation_benefits .benefit:hover .circled_icon_container{
     background: #fff;
 }
-.benefit:hover .circled_icon_container svg path{
+.cooperation_benefits .benefit:hover .circled_icon_container svg path{
     fill: var(--text-color);
 }
-.benefit:hover .benefit_svg_container{
+.cooperation_benefits .benefit:hover .benefit_svg_container{
     display: none;
 }
-.benefit:hover .benefit_svg_container_hover{
+.cooperation_benefits .benefit:hover .benefit_svg_container_hover{
     display: block;
 }
 /* profile_cooperation*/
@@ -371,7 +377,6 @@ header .container-fluid{
 .profile_part h5{
     margin-top: 12px;
     text-align: center;
-    font-size: 18px;
     font-weight: 500;
     line-height: 30.62px;
     text-transform: uppercase;
@@ -379,12 +384,13 @@ header .container-fluid{
 /* Contact */
 .contact{
     padding-top: 67px;
-    padding-bottom: 94px;
+    padding-bottom: 76px;
 }
 .contact_form{
     background-color: var(--light-gray-color);
     padding: 12px;
     border-radius: 13px;
+    max-width: 592px;
 }
 form{
     box-shadow: 0px 22px 22.2px 0px #00000017;
@@ -512,7 +518,7 @@ footer .social_links li a{
     left: 0;
     z-index: 2;
 }
-.country_div{
+.employee_countries .country_div{
     background-color: #FFFFFF;
     padding: 5px 27px 5px 5px;
     width: fit-content;
@@ -521,7 +527,7 @@ footer .social_links li a{
     filter: drop-shadow(0px 13px 19px #0000000F);
     width: 195px;
 }
-.countries_div .country_div:not(:last-child){
+.employee_countries .countries_div .country_div:not(:last-child){
     margin-bottom: 20px;
 }
 .all_countries{
@@ -536,10 +542,11 @@ footer .social_links li a{
     border-radius: 50%;
 }
 .country_div h5{
-    font-size: 18px;
     font-weight: 600;
     line-height: 30.06px;
     text-transform: uppercase;
+}
+.employee_countries .countries_div h5{
     min-width: 195px;
 }
 .employee_countries .contact_form{
@@ -599,17 +606,23 @@ footer .social_links li a{
     font-size: 36px;
     line-height: 52.27px;
     letter-spacing: 0.88px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 .employers_contact .contact_text{
     padding-left: 30px;
-    max-width: 553px;
+}
+.candidates_contact{
+    padding-inline: 25px;
 }
 .contact_detail{
+    max-width: 323px;
+}
+.contact .contact_detail:not(:last-child){
     margin-bottom: 30px;
 }
 .contact_icon_box{
     width: 50px;
+    min-width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: rgba(38, 80, 120, 0.1); 
@@ -623,6 +636,424 @@ footer .social_links li a{
     font-weight: 500;
     line-height: 25.2px;
     text-align: left;
+}
+/* ======================================= Candidates page styles ==================================*/
+.candidates_hero .hero_text{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:fit-content;
+    text-align: center;
+    color: #fff;
+}
+.candidates_hero .hero_text h1{
+    font-size: 43px;
+    font-weight: 900;
+    line-height: 53.84px;
+    letter-spacing: 0.08em;
+    margin-bottom: 35px;
+}
+.candidates_hero .hero_text h4{
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 33.8px;
+    margin-bottom: 25px;
+}
+.candidates_hero .hero_text h5{
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 23.79px;
+    margin-bottom: 35px;
+}
+.job_offers{
+    padding-inline: 225px;
+    padding-top: 64px;
+    padding-bottom: 51px;
+}
+.job_offers .main_btn{
+    margin-top: 40px;
+    padding-inline: 46px;
+    min-width: 254px;
+}
+.job_offers .row > * {
+    padding-right: 0;
+}
+.job_offers h3{
+    margin-bottom: 45px;
+}
+.offer_text h5{
+    font-weight: 500;
+    line-height: 21.41px;
+    letter-spacing: 0.08em;
+    margin-bottom: 15px;
+}
+.offer_text span{
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 17.84px;
+    letter-spacing: 0.08em;
+    text-align: justified;
+    margin-bottom: 5px;
+}
+.alt_btn{
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 18.75px;
+    letter-spacing: 0.11em;
+    background-color: #fff;
+    padding: 20px 43.5px 18px;
+    border-radius: 10px;
+    color: var(--text-color);
+    transition: var(--transition-hover);
+    display: block;
+    width: fit-content;
+}
+.alt_btn:hover{
+    background-color: var(--identity-color);
+    color: #fff;
+}
+.job_offer{
+    padding: 34.63px 16px 21.65px 16px;
+    background-color: #fff;
+    border-radius: 14px;
+    border: 1px solid #FFFFFF;
+    box-shadow: 10px 10px 33.6px 0px #0221400D;
+    gap: 25px;
+    margin-bottom: 36px;
+}
+.offer_img_container{
+    width: 79px;
+    height: 85.5px;
+    border-radius: 14px;
+    border: 1px solid #FFFFFF;
+    overflow: hidden;
+}
+.endless_possibilities{
+    padding-block: 39px;
+    padding-inline: 149px;
+}
+.endless_possibilities .img-container{
+    margin-top: 35px;
+}
+.endless_possibilities_text{
+    padding-left: 24px;
+}
+.endless_possibilities_text h2{
+    margin-bottom: 12px;
+}
+.endless_possibilities_text p, .services_text{
+    padding-right: 76px;
+}
+.better_life_path{
+    padding-block: 73px;
+}
+.better_life_path h2{
+    margin-bottom: 21px;
+}
+.why_choose{
+    padding-top: 95px;
+    padding-bottom: 68px;
+    padding-inline: 238px;
+}
+.why_choose h2{
+    margin-bottom: 79px;
+}
+.why_choose .benefit{
+    padding: 20px 13px 18px 23px;
+    border-radius: 17px;
+    margin-bottom: 28px;
+    min-height: 255px;
+}
+.icon_box_60{
+    width: 60px;
+    height: 60px;
+    background: #113457; 
+    margin-bottom: 20px;
+}
+.why_choose .benefit h5{
+    margin-bottom: 9px;
+    line-height: 20px;
+}
+.why_choose .benefit p{
+    font-weight: 300;
+}
+.services{
+    padding-top: 47px;
+    padding-bottom: 86px;
+}
+.services .services_text{
+    margin-top: 22px;
+}
+.services h2{
+    margin-bottom: 12px;
+}
+.services .form_btn{
+    margin-top: 20px;
+}
+.candidates_contact form{
+    padding-bottom: 54px !important;
+    .main_btn{
+        margin-top: 5px;
+    }
+}
+/* ======================================= Partners page styles ==================================*/
+.representative{
+    padding-block: 80px;
+}
+.representative_text{
+    padding-right: 57px;
+    max-width: 550px;
+}
+.representative_text h2{
+    margin-bottom: 10px;
+}
+.partners_services{
+    padding-block: 45px;
+}
+.partners_services_text ol{
+    max-width: 900px;
+    margin-top: 19px;
+}
+.partners_services_text ol li.common_text{
+    margin-bottom: 15px;
+    line-height: 32.4px;
+}
+.partners_employees_countries{
+    padding-top: 63px;
+    padding-bottom: 80px;
+}
+.partners_employees_countries h2{
+    max-width: 808px;
+}
+.em_country_container{
+    width: 44px;
+    min-width: 44px;
+    height: 32px;
+    border-radius: 7px;
+}
+.em_countries{
+    padding-inline: 75px;
+    margin-top: 54px;
+}
+.em_countries .country_div{
+    padding: 9px 15px;
+    min-width: 200px;
+    border: 1px solid #D6DEE5;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    gap: 14px;
+    width: fit-content;
+}
+.em_countries .country_div h5{
+    color: var(--main-color);
+}
+.partners_employees_countries p{
+    color: #7A9BBB;
+    font-size: 15px;
+    line-height: 31.35px;
+}
+.partners_employees_countries h2{
+    margin-bottom: 36px;
+}
+.best_partner{
+    background-image: url(../img/best_partner_left.png), url(../img/best_partner_right.png);
+    background-position: left top, right top;
+    background-repeat: no-repeat, no-repeat;
+    background-color: var(--main-color);
+    background-blend-mode: multiply;
+}
+.best_partner .container{
+    padding-block: 92px;
+}
+.best_partner_text{
+    color: #fff;
+}
+.best_partner_text p{
+    margin-top: 15px;
+}
+.best_partner_svg{
+    max-width: 767px;
+}
+/* ======================================= Contact page styles ==================================*/
+.contact_loaction{
+    position: relative;
+    z-index: 0 !important;
+}
+.contact_offices{
+    position: relative;
+    gap: 24px;
+    width: fit-content;
+    padding-bottom: 143px;
+    margin-top: -80px;
+    z-index: 99;
+}
+.contact_office{
+    padding: 33px 71px 38px 69px;
+    border-radius: 19px;
+    box-shadow: 0px 29px 40.2px 0px #00000012;
+}
+.contact_office h4{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 31.3px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin-bottom: 50px;
+}
+.cont_off_detail{
+    padding-left: 32px;
+}
+.cont_off_detail:not(:last-child){
+    margin-bottom: 49px;
+}
+.cont_off_icon{
+    border-radius: 11px;
+    background-color: var(--text-color);
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 22px;
+}
+.cont_off_detail .common_text{
+    line-height: 21.6px;
+}
+/* ======================================= vacancy page styles ==================================*/
+.work_Europe.container-fluid{
+    padding-inline: 72px;
+    padding-top: 91px;
+    padding-bottom: 74px;
+}
+.work_box_upper{
+    margin-bottom: 60px;
+}
+.work_Europe .work_heading{
+    color: var(--main-color);
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 61.35px;
+    margin-bottom: 53px;
+}
+.work_box{
+    padding: 42px 48px 18px 64px;
+    box-shadow: 0px 29px 40.2px 0px #00000012;
+    border-radius: 20px; 
+}
+.text_title{
+    font-size: 42px;
+    color: var(--main-color);
+    font-weight: 400;
+    line-height: 63px;
+    letter-spacing: 0.04em;
+}
+.work_text .text_title{
+    margin-bottom: 23px;
+}
+.work_text .path_text{
+    font-size: 14px;
+    line-height: 17.53px;
+    letter-spacing: 0.06em;
+    position: relative;
+    padding-left: 42px;
+    margin-bottom: 22px;
+}
+.work_text .path_text:before{
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 32px;
+}
+.svg_locat{
+    margin-right: 20px;
+}
+.work_dev_head{
+    padding: 10px 28px;
+    border-radius: 81px;
+    gap: 18px;
+    margin-bottom: 22px;
+}
+.work_dev_head span{
+    font-size: 20px;
+    line-height: 45.6px;
+    letter-spacing: 0.08em;
+    text-align: justified;
+}
+.work_num{
+    font-size: 84px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+}
+.work_adv .common_text{
+    font-size: 18px;
+    line-height: 41.04px;
+    letter-spacing: 0.08em;
+    text-align: justified;
+    padding-inline: 15px;
+}
+.work_article{
+    margin-top: 42px;
+    margin-bottom: 18px;
+}
+.work_article .text_title{
+    margin-bottom: 18px;
+}
+.work_article p{
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.08em;
+}
+.work_article p:not(:last-child) {
+    margin-bottom: 24px;
+}
+/* ======================================= Work page styles ==================================*/
+.job_sum_img{
+    max-width: 271px;
+    margin-right: 15px;
+    height: 197px;
+    overflow: hidden;
+}
+.job_summary{
+    padding: 12px 15px 17px 15px;
+    background-color: #fff;
+    box-shadow: 0px 29px 40.2px 0px #00000012;
+    border-radius: 10px;
+    margin-bottom: 22px;
+}
+.sum_item span{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 36.48px;
+    letter-spacing: 0.08em;
+}
+.svg_sum{
+    min-width: 40px;
+    margin-right: 10px;
+}
+.summary_text h4{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.55px;
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+}
+.job_add{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    right: 15px;
+    bottom: 17px;
+}
+.work_Europe .main_btn{
+    margin-top: 17px;
 }
 /* Responsiveness */
 @media(max-width: 991px){
