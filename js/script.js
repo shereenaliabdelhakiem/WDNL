@@ -22,8 +22,6 @@ document.addEventListener('scroll', function() {
         backToTopButton.classList.remove('show');
     }
 });
-
-// Optional: Smooth scrolling to top
 document.querySelector('.back_to_top').addEventListener('click', function() {
     window.scrollTo({
         top: 0,

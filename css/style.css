@@ -227,7 +227,7 @@ header .container-fluid{
 .main_hero{
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../img/about_hero_img.webp);
+    background-image: url(../img/about_hero_img.png);
 }
 .employers_hero{
     padding-top: 43px;
@@ -993,15 +993,19 @@ footer .social_links li a{
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
+.back_to_top:hover{
+    background-color: var(--main-color);
+    box-shadow: 0px 9px 10.3px 0px #26507891;
+}
 .back_to_top.show{
     opacity: 1;
 }
 .back_to_top img{
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
 }
 /* Responsiveness */
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 768px){
     .work_Europe.container-fluid{
         padding-inline: 72px;
         padding-top: 91px;
@@ -1203,10 +1207,9 @@ footer .social_links li a{
         line-height: 35.66px;
     }
     /* hero */
-    .hero{
+    .hero.main_hero{
         padding-top: 30px;
-        padding-inline: 28px;
-        height: 375px;
+        height: 357px;
     }
     .hero_text h1{
         font-size: 18px;
