@@ -111,7 +111,7 @@ h5{
     font-size: 16px;
     transition: background-color 0.2s ease-in-out;
     text-align: center;
-    padding: 16px 30px;
+    padding: 14px 30px;
     border: 0;
 }
 .main_btn:hover{
@@ -227,10 +227,7 @@ header .container-fluid{
 .main_hero{
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
-    padding-top: 91px;
     background-image: url(../img/about_hero_img.webp);
-    height: calc(100vh + 72px);
 }
 .employers_hero{
     padding-top: 43px;
@@ -250,14 +247,6 @@ header .container-fluid{
 }
 .hero_text h1 span{
     font-weight: 300;
-}
-.hero_text p{
-    font-size: 20px;
-    line-height: 29px;
-    margin-bottom: 17px;
-    margin-top: 12px;
-    max-width: 693px;
-    margin-inline: auto;
 }
 .hero .social_links{
     width: fit-content;
@@ -991,6 +980,26 @@ footer .social_links li a{
 .work_Europe .main_btn{
     margin-top: 17px;
 }
+.back_to_top{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--text-color);
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.back_to_top.show{
+    opacity: 1;
+}
+.back_to_top img{
+    width: 16px;
+    height: 16px;
+}
 /* Responsiveness */
 @media only screen and (min-width: 992px){
     .work_Europe.container-fluid{
@@ -1085,6 +1094,22 @@ footer .social_links li a{
     .offer_text h5 span{
         font-size: 18px;
         line-height:21.41px;
+    }
+    .main_hero{
+        background-position: top center;
+        padding-top: 91px;
+        height: calc(100vh + 72px);
+    }
+    .back_to_top{
+        width: 40px;
+        height: 40px;
+    }
+    .hero_text p{
+        padding-top: 5px;
+        padding-bottom: 17px;
+        font-size: 20px;
+        max-width: 680px;
+        margin-inline: auto;
     }
 }
 @media(max-width: 991px){
@@ -1181,17 +1206,27 @@ footer .social_links li a{
     .hero{
         padding-top: 30px;
         padding-inline: 28px;
-        height: 357px;
+        height: 375px;
     }
     .hero_text h1{
-        font-size: 20px;
+        font-size: 18px;
         line-height: 25.04px;
     }
     .hero_text p{
         line-height: 20.3px;
+        margin-top: 5px;
+        margin-bottom: 15px;
     }
     .hero .social_links{
         left: 16px;
+    }
+    .main_hero{
+        background-size: 139%;
+        background-position-y: 75px;
+        background-position: center bottom;
+    }
+    .main_hero .main_btn{
+        font-size: 12px;
     }
     /* partner */
     .partner_inner_img{
@@ -1208,7 +1243,7 @@ footer .social_links li a{
     .cooperation_benefits h2{
         margin-bottom: 20px;
     }
-    .benefit{
+    .benefit, .cooperation_benefits .benefit{
         padding: 15px 14px;
         gap: 13px;
         margin-bottom: 11px;
@@ -1436,6 +1471,19 @@ footer .social_links li a{
    .contact_icon_box svg{
     height: 12.52px;
    }
+   .hero .social_links li a{
+    width: 28.47px;
+    height: 28.47px;
+   }
+   .hero .social_links li a svg{
+    width: 14px;
+   }
+   .hero .social_links li:last-child a svg{
+    width: 7px;
+   }
+   .hero .social_links li a svg{
+
+   }
     /* footer */
     footer{
         padding-top: 25px;
@@ -1458,5 +1506,8 @@ footer .social_links li a{
     .fz_sm_14{
         font-size: 14px !important;
     }
-
+    .back_to_top{
+        width: 34px;
+        height: 34px;
+    }
 }
