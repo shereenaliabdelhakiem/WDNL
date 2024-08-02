@@ -303,6 +303,7 @@ header .container-fluid{
 }
 .partners{
     box-shadow: 4px 0px 20px 0px #0000000D;
+    overflow: hidden;
 }
 .partners_slider{
     padding-block: 20px;

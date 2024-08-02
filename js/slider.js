@@ -11,8 +11,8 @@ $('.partners_slider').slick({
       {
         breakpoint: 1280,
         settings: {
-          slidesToShow: 5,
-          slidesToScroll: 5,
+          slidesToShow: 4,
+          slidesToScroll: 4,
           infinite: true,
         }
       },
@@ -21,15 +21,15 @@ $('.partners_slider').slick({
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          // centerMode: false,
+          centerMode: false,
         }
       },
       {
         breakpoint: 480,
         settings: {
-          // centerMode: false,
-          slidesToShow: 3,
-          slidesToScroll: 3
+          centerMode: false,
+          slidesToShow: 2,
+          slidesToScroll: 2
         }
       }
     ]
