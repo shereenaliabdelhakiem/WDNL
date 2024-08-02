@@ -232,11 +232,6 @@ header .container-fluid{
 .employers_hero{
     padding-top: 43px;
 }
-.employers_hero .hero_text p{
-    max-width: 560px;
-    margin-bottom: 20px;
-    margin-top: 0;
-}
 .branch_hero_img{
 
 }
@@ -300,6 +295,22 @@ header .container-fluid{
 .world_map_col{
     position: absolute;
     right: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+.world_map img{
+    min-width: 100%;
+}
+.partners{
+    box-shadow: 4px 0px 20px 0px #0000000D;
+}
+.partners_slider{
+    padding-block: 20px;
+}
+.partner_logo{
+    display: flex;
+    align-items: center;
+    min-height: 100%;
 }
 /* cooperation_benefits */
 .cooperation_benefits{
@@ -533,11 +544,6 @@ footer .social_links li a{
 }
 .employee_countries .countries_div h5{
     min-width: 195px;
-}
-.employee_countries .contact_form{
-    position: absolute;
-    margin-top: 21px;
-    margin-right: 48px;
 }
 .employee_countries .common_text{
     max-width: 460px;
@@ -1115,6 +1121,16 @@ footer .social_links li a{
         max-width: 680px;
         margin-inline: auto;
     }
+    .employers_hero .hero_text p{
+        max-width: 560px;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    .employee_countries .contact_form{
+        position: absolute;
+        margin-top: 21px;
+        margin-right: 48px;
+    }
 }
 @media(max-width: 991px){
     header .container-fluid{
@@ -1207,10 +1223,6 @@ footer .social_links li a{
         line-height: 35.66px;
     }
     /* hero */
-    .hero.main_hero{
-        padding-top: 30px;
-        height: 357px;
-    }
     .hero_text h1{
         font-size: 18px;
         line-height: 25.04px;
@@ -1228,8 +1240,9 @@ footer .social_links li a{
         background-position-y: 75px;
         background-position: center bottom;
     }
-    .main_hero .main_btn{
+    .hero .main_btn{
         font-size: 12px;
+        min-width: 147px;
     }
     /* partner */
     .partner_inner_img{
@@ -1512,5 +1525,23 @@ footer .social_links li a{
     .back_to_top{
         width: 34px;
         height: 34px;
+    }
+    .branch_hero_img{
+        margin-top: 41px;
+    }
+    .employers_hero .container{
+        padding-inline: 28px;
+    }
+    .employee_countries{
+        padding-top: 50px;
+    }
+    .our_countries{
+        margin-bottom: 50px;
+    }
+}
+@media(max-width: 540px) {
+    .hero.main_hero{
+        padding-top: 30px;
+        height: 357px;
     }
 }
