@@ -221,7 +221,7 @@ header .container-fluid{
 }
 /* hero */
 .hero{
-    background-color: #F2F5F8;
+    /* background-color: #F2F5F8; */
     text-align: center;
 }
 .main_hero{
@@ -231,9 +231,7 @@ header .container-fluid{
 }
 .employers_hero{
     padding-top: 43px;
-}
-.branch_hero_img{
-
+    background-color: #F2F5F8;
 }
 .hero_text h1{
     font-size: 55px;
@@ -1109,7 +1107,8 @@ footer .social_links li a{
     .main_hero{
         background-position: top center;
         padding-top: 91px;
-        height: calc(100vh + 72px);
+        /* height: calc(100vh + 72px); */
+        height: 100vh;
     }
     .back_to_top{
         width: 40px;
@@ -1131,6 +1130,43 @@ footer .social_links li a{
         position: absolute;
         margin-top: 21px;
         margin-right: 48px;
+    }
+}
+@media (min-width: 991px) and (max-width: 1239px) {
+    .navbar-nav{
+        gap: 32px;
+        font-size: 14px;
+    }
+    .main_hero {
+        padding-top: 52px;
+    }
+    .hero_text h1{
+        font-size: 46px;
+    }
+    .hero_text p{
+        max-width: 600px;
+        font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 22px;
+    }
+    .lg_btn{
+        min-width: 240px;
+    }
+    h2{
+        font-size: 32px;
+        line-height: 44.08px;
+    }
+    h5{
+        font-size: 16px;
+        line-height: 26.62px;
+    }
+    .cooperation_benefits .benefit {
+        padding-left: 18px;
+        padding-right: 18px;
+        gap: 16px;
+    }
+    .contact_text{
+        padding-left: 24px;
     }
 }
 @media(max-width: 991px){
@@ -1202,8 +1238,22 @@ footer .social_links li a{
         padding-top: 24px;
     }
 }
-@media (min-width: 768) and (max-width: 991px) {
-
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero_text h1{
+        font-size: 32px;
+        line-height: 25.04px;
+    }
+    .hero_text p{
+        line-height: 20.3px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    .main_hero {
+        height: 62vh;
+    }
+    .employee_countries{
+        padding-top: 60px;
+    }
 }
 @media (max-width:767px){
     .container{
@@ -1544,5 +1594,14 @@ footer .social_links li a{
     .hero.main_hero{
         padding-top: 30px;
         height: 357px;
+        background-color: #ECF5FF;
+    }
+}
+@media only screen and (min-width: 440px) and (max-width:767px){
+    .main_hero{
+        height: 70vh;
+    }
+    .hero_text{
+        padding-top: 30px;
     }
 }
